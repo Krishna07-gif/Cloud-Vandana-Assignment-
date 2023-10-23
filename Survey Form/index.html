@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="script.js" defer></script>
+</head>
+<body>
+      <div class="container">
+            <div class="logo-section">
+                  <img class="logo" src="assets/download.png" alt="cloud-vandana-logo">
+                  <p><span class="blue-text">Cloud</span> <span class="cyan-text">Vandana</span></p>
+                  </div>
+            <div class="text-section">
+            <div class="introduction-text">
+            <p>This is not a real survey form! You know you need something like <span class="blue-text">Cloud</span> <span class="cyan-text">Vandana</span> in your life to help you realize your deepest dreams.</p>
+            <p>You know you want to.</p>
+            <p class="text-text">Let's do this!</p>
+            </div>
+            <form id="form" class="form" action="#" method="post">
+            <label for="first-name">First Name</label>
+                  <input type="text" pattern="^[A-Za-z]{1,15}$" id="first-name">
+            <label for="last-name">Last Name</label>
+                  <input type="text" pattern="^[A-Za-z]{1,15}$" id="last-name">
+            <label for="dob">Date of Birth</label>
+                  <input type="date" id="dob">
+                  <label for="country">Country</label>
+                  <select id="country">
+                        <option value="">Select your country</option>
+                    </select>                    
+                  <label>Gender</label>
+                  <div class="gender-options">
+                      <input type="checkbox" id="male" name="gender" value="male">
+                      <label for="male">Male</label>
+              
+                      <input type="checkbox" id="female" name="gender" value="female">
+                      <label for="female">Female</label>
+              
+                      <input type="checkbox" id="other" name="gender" value="other">
+                      <label for="other">Other</label>
+                  </div>
+            <label for="profession">Profession</label>
+                  <input type="text" id="profession">
+            <label for="email">Email</label>
+                  <input type="email" id="email">
+            <label for="phone-number">Mobile Number</label>
+                  <input type="tel" pattern="[0-9]{10,10}$" id="phone-number">
+
+                  <button class="btn" type="submit">Submit</button>
+                  <button class="btn" type="reset">Reset</button>
+      </form>
+      <p class="acc-text">Already have an account? <a href="#" target="_blank">Log in</a></p>
+      </div>
+        </div>
+
+      <div id="popup" style="display: none;">
+            <button id="closePopup">Close</button>
+            <div id="popupContent"></div>
+        </div>
+</body>
+</html>

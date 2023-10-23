@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "conthrax-sb";
+  src: url(assets/conthrax-sb.otf);
+}
+
+body {
+  background-image: url(assets/ducky-duck.jpg);
+  font-family: 'Hack', monospace;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100%;
+}
+
+.text-section {
+  background-color: white;
+  max-width: calc(100vw - 40%);
+  margin: 2rem auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.40);
+}
+
+.logo-section > p {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-family: 'conthrax-sb', sans-serif;
+  margin-top: 1.11rem;
+}
+
+.logo {
+  width: 149px;
+  height: 100px;
+  margin-right: 800px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+button {
+  background-color: rgba(3, 101, 146, 0.5);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: background-color 0.2s; /* Smooth transition for background-color */
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgba(24, 153, 214, 0.9); /* Green color on hover */
+}
+
+.acc-text {
+  text-align: center;
+  padding-top: 0.8rem;
+  padding-bottom: 1.5rem;
+}
+
+a:visited {
+  color: rgba(24, 153, 214, 0.20);
+}
+
+a:link {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(24, 153, 214);
+}
+
+.image-source {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.introduction-text > p {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.text-text {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  border: 1px solid rgba(24, 153, 214, 0.15);
+}
+
+input:focus {
+  border: 1px solid rgba(24, 153, 214, 0.3);
+  box-shadow: 2px 2px;
+}
+
+#first-name:valid,
+#last-name:valid,
+#email:valid,
+#phone-number:valid {
+  border: 2px solid green;
+}
+
+form.submitted input:invalid {
+  border: 2px solid red;
+}
+
+.blue-text {
+  color: rgba(18, 106, 167, 1); /* Blue color for "Cloud" */
+}
+
+.cyan-text {
+  color: rgba(28, 194, 243, 1); /* Cyan color for "Vandana" */
+}
